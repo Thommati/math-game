@@ -17,7 +17,7 @@
   
 ### Game Class Details
 #### State (variables)
-- Players array (the current players)
+- Players (1 & 2)
 - Turn (whose turn it is)
 - Question object for generating questions and validating answers
 - Game mode: play vs over
@@ -26,7 +26,7 @@
 #### Methods
 - Start game (game loop)
 - Resolve current round / question
-- Winner?
+- Game Over?
 - Next player / question
 - End game (menu or exit program completely)
 
@@ -42,6 +42,7 @@
 ### Player
 #### State (variables)
 - Lives remaining
+- Name
 
 #### Methods
 - Decrement lives
