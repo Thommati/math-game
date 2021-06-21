@@ -14,4 +14,8 @@ class Player
   def reset_lives
     @lives = 3
   end
+
+  def to_s
+    @player_name
+  end
 end
