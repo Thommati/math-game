@@ -1,15 +1,11 @@
-require "./player"
-require "./question"
-
 class Game
   attr_reader :turn
   
-  def initialize
-    @player1 = Player.new "Player 1"
-    @player2 = Player.new "Player 2"
+  def initialize player1, player2, question_factory
+    @player1 = player1
+    @player2 = player2
+    @question_factory = question_factory
     @turn = [@player1, @player2].sample
-    @question_factory = Question.new
-    @mode = "playing"
   end
 
   def start_game
